@@ -30,3 +30,9 @@ Because 7, 8, 9`, `Knock Knock / Who’s there? / Boo / Boo, who? / Don’t cry 
       console.log(random);
       document.getElementById("jokehere").innerHTML = jokes[random];
     }
+
+    let a = document.getElementsByTagName("div")[0];
+    let newdiv = document.createElement("div");
+    newdiv.innerHTML = "<h1> pratheek</h1>"
+
+    a.appendChild(newdiv);
