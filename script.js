@@ -31,8 +31,15 @@ Because 7, 8, 9`, `Knock Knock / Who’s there? / Boo / Boo, who? / Don’t cry 
       document.getElementById("jokehere").innerHTML = jokes[random];
     }
 
-    let a = document.getElementsByTagName("div")[0];
-    let newdiv = document.createElement("div");
-    newdiv.innerHTML = "<h1> pratheek</h1>"
+    // let a = document.getElementsByTagName("div")[0];
+    // let newdiv = document.createElement("div");
+    // newdiv.innerHTML = "<h1> pratheek</h1>"
+    // a.appendChild(newdiv);
 
+    for(let i =0; i<5 ; i++){
+      let a = document.getElementsByTagName("div")[0];
+    let newdiv = document.createElement("div");
+    newdiv.innerHTML = "pratheek"
     a.appendChild(newdiv);
+
+    }
