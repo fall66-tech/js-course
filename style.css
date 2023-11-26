@@ -8,14 +8,4 @@ html {
      padding: 0;
    }
   
-  nav {
-    display: flex;
-    background: black;
-    
-  }
-  
-  nav li {
-    list-style: none;
-    padding: 0 23px;
-    color: white;
-  }
+ 
