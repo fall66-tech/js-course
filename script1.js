@@ -1,10 +1,3 @@
-let a = document.getElementById("alert1");
-a.onclick = function() {
-    alert("yes");
-}
-
-document.getElementById("google").addEventListener("click", function() {
-    window.location = " https://google.com"
-    
-})
-
+setInterval(function() {
+    document.querySelector("#bulb").classList.toggle("bulbon");
+}, 1000);
