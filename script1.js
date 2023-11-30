@@ -1,11 +1,15 @@
+function add(a, b){
+    return a+b;
+}
 
+function divide(a, b) {
+    return a/b;
+}
 
-setInterval(function () {
-  let a = new Date();
-  let h = a.getHours();
-  let m = a.getMinutes();
-  let s = a.getSeconds();
-  document.getElementById("hours").innerHTML = h;
-  document.getElementById("mins").innerHTML = m;
-  document.getElementById("secs").innerHTML = s;
-}, 1000);
+// one way
+function calculate(x, y, operation) {
+    let r = operation(x, y);
+    console.log(r)
+}
+calculate(15, 5, add);
+console.log(calculate(10, 5, divide));
