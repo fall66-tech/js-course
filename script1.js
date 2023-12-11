@@ -1,15 +1,25 @@
-function add(a, b){
-    return a+b;
-}
+// console.log("hello1");
 
-function divide(a, b) {
-    return a/b;
-}
+// setTimeout(() => {
+//     console.log("hello2");
+// },2000)
 
-// one way
-function calculate(x, y, operation) {
-    let r = operation(x, y);
-    console.log(r)
-}
-calculate(15, 5, add);
-console.log(calculate(10, 5, divide));
+// console.log("hello3");
+
+let p1 = new Promise((resolve, reject) => {
+    console.log("promise pending")
+    setTimeout(()=>{
+        console.log("im a promise and im fulfilled");
+        resolve(true)
+    },5000)
+})
+
+let p2 = new Promise((resolve, reject) => {
+    console.log("promise pending")
+    setTimeout(()=>{
+        console.log("im a promise and im rejected");
+        reject(new Error("this is an error"))
+    },5000)
+})
+
+console.log(p1, p2)
