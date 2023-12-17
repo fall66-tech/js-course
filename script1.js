@@ -1,25 +1,6 @@
-setTimeout(() => {
-    console.log("hacking your phone");
-
-}, 1000);
-
-
 try {
-    console.log(rahul)
+    rahul
 } catch (error) {
-    console.log("error hacking his number")
-    
+    console.log(error.name)
+    console.log(error.message)
 }
-
-
-
-setTimeout(() => {
-    console.log("hacking your phone.........");
-   
-}, 3000);
-
-
-setTimeout(() => {
-    console.log("hacked");
-
-}, 5000);
