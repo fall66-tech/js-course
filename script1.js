@@ -1,11 +1,11 @@
-try {
-   let a = 0;
-//    console.log(program)
-   console.log("this code ran")
-} catch (error) {
-    console.log("this is an error")
-    console.log(program)
+const loadscript = async (src) => {
+    let script = document.createElement("script")
+    script.src = src
+    console.log("this is the new script tag")
+    console.log("this is the cdn link " +src)
+    // console.log(script)
+    document.head.append(script)
+    
 }
-finally {
-    console.log("this will definitly run")
-}
+
+loadscript("https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js")
