@@ -1,7 +1,11 @@
 try {
-    // throw new Error("you will be great");
-    throw new ReferenceError("you will be great");
+   let a = 0;
+//    console.log(program)
+   console.log("this code ran")
 } catch (error) {
-    console.log(error.name)
-    console.log(error.message)
+    console.log("this is an error")
+    console.log(program)
+}
+finally {
+    console.log("this will definitly run")
 }
