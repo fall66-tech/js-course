@@ -17,17 +17,8 @@
     <button type="submit">submit</button>
 
   </form>
-  <script>
-   const formEl = document.querySelector('.form');
-
-   formEl.addEventListener('submit', event => {
-    event.preventDefault();
-
-    const formData = new FormData(formEl);
-    // console.log(formData.get('username'))
-    const data = Object.fromEntries(formData);
-    console.log(data)
-   })
+  <script src="/script.js">
+  
   </script>
 </body>
 
